@@ -35,9 +35,9 @@ Deep unfolding networks (DUNs), which couple traditional optimization algorithms
 ## Prepare Enviroment
 `conda create -n LGMNet python=3.8`
 
-`pip install torch=1.13.0`
+`pip install torch==1.13.0`
 
-`pip install numpy=1.24.0 opencv-python tqdm scikit-image`
+`pip install numpy==1.24.0 opencv-python tqdm scikit-image`
 ## Test
 Download [official weight](https://drive.google.com/drive/folders/1wX0oh0-cnrJZZjPBNlwNwsgkR8jONftx?usp=drive_link) and put them into model folder.
 We have placed the Set11 dataset in the data folder. You can test it directly by running `python test.py` without any additional steps.
@@ -49,6 +49,7 @@ Put [CoCo2017 training set](https://cocodataset.org/#download) or others into da
 
 ## Acknowledgements
 This code is built on [FSOINet](https://github.com/cwjjun/fsoinet), [OCTUF](https://github.com/songjiechong/OCTUF), [PRL](https://github.com/Guaishou74851/PRL). We thank the authors for sharing their codes.
+
 
 
 
