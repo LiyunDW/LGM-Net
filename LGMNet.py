@@ -101,7 +101,7 @@ class UNet_sub_layer(nn.Module):
     def forward(self, x, z):
         if self.mode == "down":
             x, z = self.hqsD(torch.cat([x, z], dim=1))
-            x, z = self.hqsD1(x + z)  # AVF_U
+            x, z = self.hqsD1(x + z)
         if self.mode is None:
             x, z = self.hqsM(torch.cat([x, z], dim=1))
         if self.mode == "up":
