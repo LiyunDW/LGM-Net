@@ -134,7 +134,7 @@ print('start training...')
 for epoch_i in range(start_epoch + 1, end_epoch + 1):
     start_time = time()
     lr = scheduler.optimizer.param_groups[0]['lr']
-    loss_avg, iter_num = 0.0, 0
+    loss_avg = 0.0
     for data in tqdm(my_loader, ncols=100, colour="cyan"):
         x = data.unsqueeze(1).to(device)
         x = H(x, random.randint(0, 7))
@@ -142,7 +142,6 @@ for epoch_i in range(start_epoch + 1, end_epoch + 1):
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
-        iter_num += 1
         loss_avg += loss.item()
     scheduler.step()
     loss_avg /= iter_num
