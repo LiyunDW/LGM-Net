@@ -14,7 +14,6 @@
 ## Abstract
 Deep unfolding networks (DUNs), which couple traditional optimization algorithms with neural networks, have achieved remarkable success in compressive sensing. However, due to the insufficient exploitation of high-dimensional feature domain (FD) information and the loss of information during the sampling process, current DUN-based image reconstructions still suffer from significant distortions and blurring. We propose an adaptive endogenous gradient reconstruction method, LGM-Net, to address the fidelity term. First, we fully leverage the high-dimensional features derived from multiple priors and integrate them into the half quadratic splitting algorithm (HQS) iterative process, thereby transforming the conventional gradient update into the generation of endogenous gradients through adaptive endogenous gradient reconstruction (AEGR) in the FD. Second, to enhance multi-scale feature representation, we design a dual variable iterative U-Net architecture that effectively captures hierarchical structural information across FD. Finally, we introduce a customized auxiliary variable fusion (AVF) strategy during the sampling process to minimize the loss of high-frequency information caused by downsampling. Extensive experiments demonstrate that the proposed high-dimensional feature adaptive reconstruction strategy better captures global information and outperforms current state-of-the-art (SOTA) methods.
 
-**Code Availability:** [LGM-Net](https://github.com/LiyunDW/LGM-Net)
 
 ---
 
